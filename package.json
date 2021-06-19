@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://haimleibman.github.io/",
+  "homepage": "http://haimleibman.github.io/open-weather-client",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -30,7 +30,6 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
     "start": "set HTTPS=true&&react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
