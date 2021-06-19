@@ -3,44 +3,38 @@
 
     display: grid;
     grid-template-areas: 
-        'city city'
-        'icon degree'
-        'icon description';
-    grid-template-rows: 3em 4em 1fr;
-    grid-template-columns: 8em 1fr;
+        'city'
+        'degree'
+        'description';
+    grid-template-rows: 3em 4em 2em;
+    grid-template-columns: 1fr;
     justify-self: center;
+    justify-items: center;
 
     margin: .5em;
+    width: 10em;
+    height: fit-content;
+    padding-block: 1em;
+    border-radius: 1em;
 
         .city {
             grid-area: city;
             align-self: end;
             
-            margin-left: .5em;
             color: gray;
             
             font-size: 1.5em;
         }
 
-        .icon {
-            margin-left: -2em;
-            width: -webkit-fill-available;
-            clip-path: circle(35% at 50% 50%);
-        }
-
         .degree {
             grid-area: degree;
             align-self: end;
-
-            margin-left: -1em;
             
             font-size: 2em;
         }
 
         .description {
             grid-area: description;
-            
-            margin-left: -2em;
 
             color: gray;
         }

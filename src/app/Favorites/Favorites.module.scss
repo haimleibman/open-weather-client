@@ -1,7 +1,9 @@
-.forecasts {
+.favorites {
+    width: 30em;
     grid-area: forecasts;
     display: grid;
-    grid-template-columns: repeat(5, 6em);
+    grid-auto-flow: column;
+    justify-items: center;
     gap: .5em;
     margin: .5em 1em;
     overflow-x: auto;

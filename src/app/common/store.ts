@@ -1,18 +1,11 @@
-import { City } from './../models/city';
 import { atom } from 'recoil';
 
-
-export const Cities = atom<City[]>({
-  key: 'cities',
-  default: []
-});
-
-export const SelectedCity = atom<City>({
+export const SelectedCity = atom<string>({
   key: 'selectedCity',
-  default: {Key: '215854', LocalizedName: 'Tel Aviv'}
+  default: 'Tel Aviv'
 });
 
-export const FavoriteCities = atom<City[]>({
+export const FavoriteCities = atom<string[]>({
   key: 'favorites',
   default: []
 });

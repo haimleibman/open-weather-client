@@ -1,13 +1,17 @@
-.dayWrather {
-    display: grid;;
+.favoriteCity {
+    display: grid;
     grid-template-rows: 2em 3em 2em;
     justify-items: center;
     border-radius: 1em;
-    border: 1px solid lightgray;
     height: -webkit-fill-available;
     justify-content: center;
+    width: 6em;
 
-    .header {
+    .city {
         color: gray;
+    }
+
+    .description {
+        text-overflow: ellipsis;
     }
 }
